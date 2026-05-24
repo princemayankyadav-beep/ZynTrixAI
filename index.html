@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZYNTRIX builds intelligent cybersecurity systems that predict, detect, and neutralize digital threats before they become incidents. Defense at Machine Speed.">
+    <title>ZYNTRIX — Defense at Machine Speed.</title>
+
+    <!-- Professional Tech Fonts: Outfit (Display) & Inter (Body) & JetBrains Mono (Code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.14/lenis.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== AMBIENT LIQUID ORBS ========== -->
+    <div class="ambient-background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- ========== NAV ========== -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">
+            <img src="images/logo.png" alt="ZYNTRIX" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="logo-text" style="display:none;">ZYN<span>TRIX</span></span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="#services">Capabilities</a>
+            <a href="#products">Platforms</a>
+            <a href="#careers">Careers</a>
+            <a href="#events">Events</a>
+            <a href="#aboutus">Company</a>
+            <a href="mailto:contact@zyntrix.ai" class="nav-cta">Request Demo</a>
+            <a href="mailto:contact@zyntrix.ai?subject=Subscribe%20to%20Intel%20Briefings" class="nav-cta nav-cta-secondary">Intel Briefs</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ========== SIDE PANEL ========== -->
+    <div class="side-panel-overlay"></div>
+    <aside class="side-panel">
+        <button class="close-panel" aria-label="Close">&#x2715;</button>
+        <div class="panel-content"></div>
+    </aside>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-container">
+            <p class="hero-badge fade-in-hero"><span class="badge-dot"></span>AI-Native Cyber Defense Platform</p>
+            <h1 class="hero-title fade-in-hero">
+                Defense at<br>
+                <em>Machine Speed.</em>
+            </h1>
+            <p class="hero-desc fade-in-hero">ZYNTRIX builds intelligent cybersecurity systems that predict, detect, and neutralize digital threats before they become incidents.</p>
+            <p class="hero-proof fade-in-hero">We combine artificial intelligence, behavioral analytics, and real-time infrastructure intelligence to help organizations stay ahead of modern cyber threats. Secure critical assets, automate response, and scale resilience across your entire digital environment.</p>
+
+            <div class="hero-actions fade-in-hero">
+                <a href="mailto:contact@zyntrix.ai" class="btn-primary">Request Demo <span class="btn-arrow">→</span></a>
+                <a href="#products" class="btn-ghost">Explore Platform</a>
+            </div>
+            <p class="hero-note fade-in-hero">Enterprise-grade defense. Autonomous execution.</p>
+
+            <div class="hero-stats glass-panel fade-in-hero">
+                <div class="stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years of AI Security</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-label">Enterprise Deployments</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">99.99%</span>
+                    <span class="stat-label">Threat Monitoring Uptime</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee-wrapper">
+        <div class="marquee-track">
+            <span>AI Threat Detection &nbsp;◆&nbsp; Zero Trust Architecture &nbsp;◆&nbsp; Behavioral Intelligence &nbsp;◆&nbsp; Autonomous SOC &nbsp;◆&nbsp; Cloud Security &nbsp;◆&nbsp; Threat Hunting &nbsp;◆&nbsp; Digital Risk Intelligence &nbsp;◆&nbsp; Infrastructure Defense &nbsp;◆&nbsp; AI Surveillance &nbsp;◆&nbsp; Threat Correlation &nbsp;◆&nbsp; Endpoint Protection &nbsp;◆&nbsp; Adversarial Monitoring &nbsp;◆&nbsp;</span>
+            <span aria-hidden="true">AI Threat Detection &nbsp;◆&nbsp; Zero Trust Architecture &nbsp;◆&nbsp; Behavioral Intelligence &nbsp;◆&nbsp; Autonomous SOC &nbsp;◆&nbsp; Cloud Security &nbsp;◆&nbsp; Threat Hunting &nbsp;◆&nbsp; Digital Risk Intelligence &nbsp;◆&nbsp; Infrastructure Defense &nbsp;◆&nbsp; AI Surveillance &nbsp;◆&nbsp; Threat Correlation &nbsp;◆&nbsp; Endpoint Protection &nbsp;◆&nbsp; Adversarial Monitoring &nbsp;◆&nbsp;</span>
+        </div>
+    </div>
+
+    <!-- ========== ABOUT INTRO ========== -->
+    <section class="about-intro" id="about-intro">
+        <div class="section-inner">
+            <div class="about-intro-grid">
+                <div class="about-intro-left">
+                    <p class="section-label fade-up">Who We Are</p>
+                    <h2 class="section-heading fade-up">We Build Intelligent Defense Systems</h2>
+                </div>
+                <div class="about-intro-right glass-panel fade-up">
+                    <p class="large-para">ZYNTRIX is an AI-powered cybersecurity company focused on building resilient digital defense infrastructure for modern organizations.</p>
+                    <p class="body-para">Our platforms combine machine intelligence, threat analytics, and autonomous monitoring to help enterprises secure critical systems, detect anomalies in real time, and reduce operational risk. We deploy mission-critical solutions across Finance, Defense, Critical Infrastructure, SaaS Platforms, Healthcare, Telecom, and Smart Cities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services" id="services">
+        <div class="section-inner">
+            <div class="section-header fade-up">
+                <p class="section-label">Core Capabilities</p>
+                <h2 class="section-heading">Operational Defense</h2>
+                <p class="section-sub">End-to-end security architectures engineered for the modern threatscape.</p>
+            </div>
+
+            <div class="service-list">
+                <div class="service-item glass-panel fade-up">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="22" rx="3" stroke="currentColor" stroke-width="2"/><path d="M14 30l-2 4h16l-2-4" stroke="currentColor" stroke-width="2"/><path d="M10 18h20M10 22h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="service-body">
+                        <h3>Neural Defense Operations</h3>
+                        <p>24/7 AI-assisted threat monitoring, anomaly detection, incident response, and autonomous security operations built for high-stakes enterprise environments.</p>
+                    </div>
+                    <a href="#services" class="service-link">View Architecture →</a>
+                </div>
+
+                <div class="service-item glass-panel fade-up">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 4L6 10v10c0 8.4 5.9 16.3 14 18.4C28.1 36.3 34 28.4 34 20V10L20 4z" stroke="currentColor" stroke-width="2"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="service-body">
+                        <h3>ZeroCore Infrastructure Security</h3>
+                        <p>Secure cloud, on-premise, and hybrid infrastructure through zero-trust architecture, hardened deployment models, and intelligent access control mechanisms.</p>
+                    </div>
+                    <a href="#services" class="service-link">View Architecture →</a>
+                </div>
+
+                <div class="service-item glass-panel fade-up">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="11" r="3"/><path d="M12 14v2"/></svg>
+                    </div>
+                    <div class="service-body">
+                        <h3>Sentinel Red Teaming</h3>
+                        <p>Advanced penetration testing and adversarial simulation designed to expose vulnerabilities across complex networks and applications before attackers do.</p>
+                    </div>
+                    <a href="#services" class="service-link">View Architecture →</a>
+                </div>
+
+                <div class="service-item glass-panel fade-up">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <div class="service-body">
+                        <h3>QuantumTrace Intelligence</h3>
+                        <p>Digital threat intelligence and behavioral analytics platform for identifying hidden attack patterns, suspicious activity, and emerging external cyber risks.</p>
+                    </div>
+                    <a href="#services" class="service-link">View Architecture →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTS ========== -->
+    <section class="products" id="products">
+        <div class="section-inner">
+            <div class="section-header fade-up">
+                <p class="section-label">Our Ecosystem</p>
+                <h2 class="section-heading">Platforms</h2>
+            </div>
+
+            <div class="product-grid">
+                <!-- VANTA-X -->
+                <div class="product-card glass-panel fade-up" data-glow="blue">
+                    <div class="product-card-top">
+                        <div class="product-badge">AI Threat Engine</div>
+                        <h3 class="product-name">VANTA-X</h3>
+                        <p class="product-tagline">Real-Time Cyber Intelligence Platform</p>
+                        <p class="product-desc">A highly advanced intelligence engine capable of correlating billions of security events using machine learning and behavioral analytics. Neutralize lateral movement and detect sophisticated intrusions autonomously.</p>
+                        <div class="product-image">
+                            <img src="images/zyntrix1.png" alt="VANTA-X Dashboard">
+                        </div>
+                    </div>
+                    <div class="product-card-bottom">
+                        <div class="product-tags">
+                            <span>Threat Correlation</span><span>Risk Scoring</span><span>AI Pattern Detection</span><span>Autonomous Alerts</span>
+                        </div>
+                        <button class="view-details-btn product-btn" data-target="vantax-detail">View Details →</button>
+                    </div>
+                </div>
+
+                <!-- ECLIPSE EYE -->
+                <div class="product-card glass-panel fade-up" data-glow="purple">
+                    <div class="product-card-top">
+                        <div class="product-badge naina">Autonomous AI</div>
+                        <h3 class="product-name">ECLIPSE EYE</h3>
+                        <p class="product-tagline">Visual Intelligence &amp; Surveillance Network</p>
+                        <p class="product-desc"><strong>Predictive perimeter defense.</strong> An AI-powered visual intelligence system capable of anomaly detection, activity recognition, perimeter monitoring, and forensic event reconstruction for sensitive physical infrastructure.</p>
+                        <div class="product-image">
+                            <img src="images/zyntrix2.png" alt="ECLIPSE EYE Interface">
+                        </div>
+                    </div>
+                    <div class="product-card-bottom">
+                        <div class="product-tags">
+                            <span>Smart Surveillance</span><span>Incident Replay</span><span>AI Vision Models</span><span>Multi-Camera Analytics</span>
+                        </div>
+                        <button class="view-details-btn product-btn" data-target="eclipseeye-detail">View Details →</button>
+                    </div>
+                </div>
+
+                <!-- BLACKNODE GRID -->
+                <div class="product-card glass-panel fade-up" data-glow="teal">
+                    <div class="product-card-top">
+                        <div class="product-badge sws">Infrastructure</div>
+                        <h3 class="product-name">BLACKNODE GRID</h3>
+                        <p class="product-tagline">Secure Enterprise Deployment Ecosystem</p>
+                        <p class="product-desc">Establish a hardened operational baseline. A secure enterprise ecosystem for zero-trust networking, containerized infrastructure, encrypted communication, and infinitely scalable cyber operations.</p>
+                    </div>
+                    <div class="product-card-bottom">
+                        <div class="sws-logos">
+                            <div class="sws-logo-item"><img src="images/icon/kubernetes.svg" alt="Kubernetes" onerror="this.style.display='none'"><span>Kubernetes</span></div>
+                            <div class="sws-logo-item"><img src="images/icon/gitlab.svg" alt="GitLab" onerror="this.style.display='none'"><span>CI/CD</span></div>
+                            <div class="sws-logo-item"><img src="images/icon/pngfind.svg" alt="Telemetry" onerror="this.style.display='none'"><span>Telemetry</span></div>
+                            <div class="sws-logo-item"><img src="images/icon/icinga1.svg" alt="Observability" onerror="this.style.display='none'"><span>Observability</span></div>
+                            <div class="sws-logo-item"><img src="images/icon/managed_email.svg" alt="Encrypted Comms" onerror="this.style.display='none'"><span>Comms</span></div>
+                            <div class="sws-logo-item"><img src="images/icon/nextcloud.svg" alt="Secure Storage" onerror="this.style.display='none'"><span>Storage</span></div>
+                        </div>
+                        <a href="mailto:contact@zyntrix.ai" class="product-btn">Initialize Deployment →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GOVERNANCE ========== -->
+    <section class="governance">
+        <div class="section-inner">
+            <div class="governance-grid">
+                <div class="governance-left fade-up">
+                    <p class="section-label">Design Doctrine</p>
+                    <h2 class="governance-heading">Built for Resilience.<br><em>Not Just Compliance.</em></h2>
+                    <p>Security should never be an afterthought. We engineer digital resilience from the core out, leveraging automation, behavioral intelligence, and rigid network segmentation.</p>
+                    <p>By shifting from reactive legacy systems to predictive AI defense layers, ZYNTRIX enables organizations to maintain continuous operational integrity against highly sophisticated, rapidly mutating cyber threats.</p>
+                    <a href="mailto:contact@zyntrix.ai" class="btn-primary">Schedule Briefing <span class="btn-arrow">→</span></a>
+                </div>
+                <div class="governance-right fade-up">
+                    <div class="gov-card glass-panel">
+                        <div class="gov-card-icon">🧠</div>
+                        <h4>AI-First Architecture</h4>
+                        <p>Security systems designed with machine intelligence embedded deeply into every network layer.</p>
+                    </div>
+                    <div class="gov-card glass-panel">
+                        <div class="gov-card-icon">👁️</div>
+                        <h4>Continuous Threat Visibility</h4>
+                        <p>Real-time, comprehensive awareness across cloud infrastructure, localized networks, and endpoints.</p>
+                    </div>
+                    <div class="gov-card glass-panel">
+                        <div class="gov-card-icon">⚡</div>
+                        <h4>Autonomous Response</h4>
+                        <p>Radically reduce reaction times through intelligent, policy-driven automated defense actions.</p>
+                    </div>
+                    <div class="gov-card glass-panel">
+                        <div class="gov-card-icon">📊</div>
+                        <h4>Operational Transparency</h4>
+                        <p>Clear visibility, strict auditability, and total sovereign control over all security operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MISSION & VISION ========== -->
+    <section class="mission-vision">
+        <div class="section-inner">
+            <div class="mv-grid">
+                <div class="mv-card glass-panel fade-up">
+                    <div class="mv-icon">
+                        <span class="mv-icon-fallback">🎯</span>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To build intelligent cybersecurity systems capable of defending modern digital infrastructure at machine speed. We integrate advanced AI models, behavioral analytics, and battle-tested engineering to neutralize threats before they can execute, shifting the balance of power back to the defenders.</p>
+                </div>
+                <div class="mv-card glass-panel fade-up">
+                    <div class="mv-icon">
+                        <span class="mv-icon-fallback">🔭</span>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To redefine global cybersecurity through autonomous intelligence, predictive defense, and resilient digital architecture. We aim to create a future where organizations operate with absolute certainty, free from the constraints of legacy vulnerabilities, empowered by systems that learn, adapt, and secure in real time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT US FULL ========== -->
+    <section class="aboutus" id="aboutus">
+        <div class="section-inner">
+            <div class="section-header fade-up">
+                <p class="section-label">Company Narrative</p>
+                <h2 class="section-heading">The ZYNTRIX Origin</h2>
+            </div>
+
+            <div class="aboutus-grid">
+                <div class="aboutus-text fade-up">
+                    <p>ZYNTRIX is an AI-native cybersecurity company established with a singular focus: building resilient digital defense infrastructure for the world’s most targeted organizations. Founded in 2021 and headquartered in Gurugram, India, we blend predictive analytics with elite security engineering.</p>
+                    <p>As adversarial tactics evolve, legacy security perimeters fail. We serve enterprises across Finance, Defense, Critical Infrastructure, SaaS Platforms, Healthcare, Telecom, and Smart Cities. Our AI-driven security research enables us to identify attack vectors and neutralize threats at machine speed, turning vulnerabilities into reinforced strongholds.</p>
+                    <p>In an era defined by sophisticated cyber warfare, our proprietary platforms—like VANTA-X and ECLIPSE EYE—combine machine intelligence, threat analytics, and autonomous monitoring. We help enterprises secure critical data, detect behavioral anomalies in real time, and drastically reduce operational risk.</p>
+                    <p>Our elite engineering teams operate at the bleeding edge of security research. We hold top-tier certifications and specialize in enterprise defense systems, zero-trust architecture, and highly scalable digital threat intelligence. ZYNTRIX does not just secure your current perimeter; we fortify your technological future.</p>
+
+                    <div class="trust-groups">
+                        <div class="trust-group">
+                            <h3>Compliance Baselines</h3>
+                            <div class="compliance-row">
+                                <div class="compliance-item">
+                                    <div class='comp-badge'>SOC 2 Type II</div>
+                                </div>
+                                <div class="compliance-item">
+                                    <div class='comp-badge'>ISO 27001</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trust-group">
+                            <h3>Strategic Memberships</h3>
+                            <div class="compliance-row">
+                                <div class="compliance-item ncsrc-item">
+                                    <div class='comp-badge'>Cyber Threat Intelligence Network</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutus-image glass-panel fade-up">
+                    <img src="images/aboutus.webp" alt="ZYNTRIX Security Operations" onerror="this.style.display='none'">
+                    <div class="aboutus-img-overlay"></div>
+                </div>
+            </div>
+
+            <!-- Partners -->
+            <div class="partners-section fade-up">
+                <h3 class="partners-title">Technology Ecosystem Integrations</h3>
+                <div class="partners-grid glass-panel">
+                    <div class="partner-logo">
+                        <span>AWS Security</span>
+                    </div>
+                    <div class="partner-logo">
+                        <span>Microsoft Azure</span>
+                    </div>
+                    <div class="partner-logo">
+                        <span>Google Cloud</span>
+                    </div>
+                    <div class="partner-logo">
+                        <span>NVIDIA Inception</span>
+                    </div>
+                    <div class="partner-logo">
+                        <span>Palo Alto Networks</span>
+                    </div>
+                    <div class="partner-logo">
+                        <span>Elastic Security</span>
+                    </div>
+                    <div class="partner-logo">
+                        <span>Cloudflare</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEAM EXPERTISE / CERTIFICATIONS ========== -->
+    <section class="expertise">
+        <div class="section-inner">
+            <div class="section-header fade-up">
+                <p class="section-label">Security Expertise &amp; Research</p>
+                <h2 class="section-heading">Elite Credentials</h2>
+                <p class="section-sub">Our engineers, analysts, and security researchers specialize in enterprise defense systems, cloud security, offensive security, AI infrastructure, and digital threat intelligence. We hold top industry certifications backing our operational capabilities.</p>
+            </div>
+
+            <div class="cert-scroll-track fade-up">
+                <div class="cert-scroll-inner">
+                    <!-- Standardized placeholder icons for the demo -->
+                    <img src="images/CertIcons/icon1.jpg" alt="CISSP" title="CISSP" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CISSP</text></svg>'">
+                    <img src="images/CertIcons/icon2.jpg" alt="CEH" title="CEH" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CEH</text></svg>'">
+                    <img src="images/CertIcons/icon3.jpg" alt="OSCP" title="OSCP" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>OSCP</text></svg>'">
+                    <img src="images/CertIcons/icon4.jpg" alt="CCSP" title="CCSP" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CCSP</text></svg>'">
+                    <img src="images/CertIcons/icon5.jpg" alt="CompTIA Sec+" title="CompTIA Security+" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>SEC+</text></svg>'">
+                    <img src="images/CertIcons/icon6.jpg" alt="Azure Sec" title="Microsoft Security Engineer" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>MS SEC</text></svg>'">
+                    <img src="images/CertIcons/icon7.jpg" alt="AWS Sec" title="AWS Security Specialty" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>AWS SEC</text></svg>'">
+                    <img src="images/CertIcons/icon8.jpg" alt="CRTP" title="Certified Red Team Professional" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CRTP</text></svg>'">
+                    <img src="images/CertIcons/icon9.jpg" alt="K8s Sec" title="Kubernetes Security" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CKS</text></svg>'">
+                    <img src="images/CertIcons/icon10.jpg" alt="AI Sec" title="AI Security Research" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>AI SEC</text></svg>'">
+                    <img src="images/CertIcons/icon11.jpg" alt="CTI" title="Threat Intelligence" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CTI</text></svg>'">
+                    <img src="images/CertIcons/icon12.jpg" alt="Zero Trust" title="Zero Trust Architecture" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>ZTA</text></svg>'">
+                    
+                    <!-- Duplicates for scrolling loop -->
+                    <img src="images/CertIcons/icon1.jpg" alt="CISSP" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CISSP</text></svg>'">
+                    <img src="images/CertIcons/icon2.jpg" alt="CEH" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CEH</text></svg>'">
+                    <img src="images/CertIcons/icon3.jpg" alt="OSCP" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>OSCP</text></svg>'">
+                    <img src="images/CertIcons/icon4.jpg" alt="CCSP" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CCSP</text></svg>'">
+                    <img src="images/CertIcons/icon5.jpg" alt="CompTIA Sec+" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>SEC+</text></svg>'">
+                    <img src="images/CertIcons/icon6.jpg" alt="Azure Sec" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>MS SEC</text></svg>'">
+                    <img src="images/CertIcons/icon7.jpg" alt="AWS Sec" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>AWS SEC</text></svg>'">
+                    <img src="images/CertIcons/icon8.jpg" alt="CRTP" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CRTP</text></svg>'">
+                    <img src="images/CertIcons/icon9.jpg" alt="K8s Sec" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CKS</text></svg>'">
+                    <img src="images/CertIcons/icon10.jpg" alt="AI Sec" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>AI SEC</text></svg>'">
+                    <img src="images/CertIcons/icon11.jpg" alt="CTI" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>CTI</text></svg>'">
+                    <img src="images/CertIcons/icon12.jpg" alt="Zero Trust" aria-hidden="true" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\'><rect width=\'72\' height=\'72\' fill=\'%230a1628\'/><text x=\'50%\' y=\'50%\' fill=\'%2300C8E8\' font-size=\'12\' text-anchor=\'middle\' alignment-baseline=\'middle\'>ZTA</text></svg>'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CAREERS ========== -->
+    <section class="careers" id="careers">
+        <div class="section-inner">
+            <div class="section-header fade-up">
+                <p class="section-label">Join The Frontlines</p>
+                <h2 class="section-heading">Careers at ZYNTRIX</h2>
+                <p class="section-sub">We operate a high-performance, innovation-focused environment. Work alongside elite engineers on next-generation cyber defense systems and shape the future of enterprise resilience.</p>
+            </div>
+
+            <div class="career-visual-grid fade-up" aria-label="ZYNTRIX engineering culture">
+                <img src="images/career.svg" alt="ZYNTRIX workspace" onerror="this.style.display='none'">
+                <img src="images/career1.svg" alt="Engineering" onerror="this.style.display='none'">
+                <img src="images/career2.svg" alt="Security Labs" onerror="this.style.display='none'">
+                <img src="images/career3.svg" alt="AI Research" onerror="this.style.display='none'">
+                <img src="images/career4.svg" alt="Cyber Ops" onerror="this.style.display='none'">
+                <img src="images/career5.svg" alt="Command Center" onerror="this.style.display='none'">
+                <img src="images/career6.png" alt="Hardware Security" onerror="this.style.display='none'">
+                <img src="images/career7.svg" alt="Innovation" onerror="this.style.display='none'">
+            </div>
+
+            <div class="career-list">
+                <!-- Job 1 -->
+                <div class="career-card glass-panel fade-up">
+                    <div class="career-header">
+                        <div>
+                            <span class="career-type">Full-Time · Hybrid</span>
+                            <h3>AI Security Engineer</h3>
+                            <div class="career-meta">
+                                <span>📍 Gurugram, India</span>
+                                <span>🏆 4+ Years Experience</span>
+                                <span>🤖 AI/ML Operations</span>
+                            </div>
+                        </div>
+                        <button class="view-details-btn career-btn" data-target="job1-detail">View Role →</button>
+                    </div>
+                    <p class="career-summary">Design and train advanced machine learning models for anomaly detection, behavioral analytics, and automated threat hunting. Integrate deep learning directly into our security engines.</p>
+                    <div class="career-skills">
+                        <span>Python</span><span>PyTorch</span><span>Threat Modeling</span><span>Adversarial AI</span><span>MLOps</span>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="career-card glass-panel fade-up">
+                    <div class="career-header">
+                        <div>
+                            <span class="career-type">Full-Time · Remote</span>
+                            <h3>Threat Intelligence Analyst</h3>
+                            <div class="career-meta">
+                                <span>📍 Remote</span>
+                                <span>🏆 3–5 Years Experience</span>
+                                <span>👤 Research Division</span>
+                            </div>
+                        </div>
+                        <button class="view-details-btn career-btn" data-target="job2-detail">View Role →</button>
+                    </div>
+                    <p class="career-summary">Analyze emerging APTs, track adversarial infrastructure, and produce actionable intelligence reports. Feed IOCs into VANTA-X to ensure predictive defense capabilities.</p>
+                    <div class="career-skills">
+                        <span>OSINT</span><span>Malware Analysis</span><span>MITRE ATT&amp;CK</span><span>YARA</span><span>Network Forensics</span>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="career-card glass-panel fade-up">
+                    <div class="career-header">
+                        <div>
+                            <span class="career-type">Full-Time · On-site</span>
+                            <h3>Cloud Infrastructure Security Architect</h3>
+                            <div class="career-meta">
+                                <span>📍 Gurugram, India</span>
+                                <span>🏆 7+ Years Experience</span>
+                                <span>☁️ Platform Security</span>
+                            </div>
+                        </div>
+                        <button class="view-details-btn career-btn" data-target="job3-detail">View Role →</button>
+                    </div>
+                    <p class="career-summary">Engineer resilient, zero-trust cloud architectures. Oversee secure enclave deployments, manage Kubernetes security postures, and implement strict identity gating.</p>
+                    <div class="career-skills">
+                        <span>AWS/Azure</span><span>Kubernetes</span><span>Terraform</span><span>Zero Trust</span><span>IAM</span>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="career-card glass-panel fade-up">
+                    <div class="career-header">
+                        <div>
+                            <span class="career-type">Full-Time · Remote</span>
+                            <h3>Detection Engineering Specialist</h3>
+                            <div class="career-meta">
+                                <span>📍 Remote</span>
+                                <span>🏆 5+ Years Experience</span>
+                                <span>🔍 SOC Operations</span>
+                            </div>
+                        </div>
+                        <button class="view-details-btn career-btn" data-target="job4-detail">View Role →</button>
+                    </div>
+                    <p class="career-summary">Write high-fidelity detection rules, optimize SIEM pipelines, and automate incident response playbooks to defend enterprise networks at scale.</p>
+                    <div class="career-skills">
+                        <span>SIEM</span><span>Python</span><span>Splunk/Elastic</span><span>Detection as Code</span><span>SOAR</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="careers-cta fade-up">
+                <p>Don't see an exact fit? We are always looking for elite operators.</p>
+                <a href="mailto:careers@zyntrix.ai" class="btn-primary">Transmit Resume <span class="btn-arrow">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EVENTS ========== -->
+    <section class="events" id="events">
+        <div class="section-inner">
+            <div class="section-header fade-up">
+                <p class="section-label">Global Presence</p>
+                <h2 class="section-heading">Briefings &amp; Events</h2>
+                <p class="section-sub">Connect with the ZYNTRIX engineering team at premier global cybersecurity summits and technical defense conferences.</p>
+            </div>
+
+            <div class="event-grid">
+                <div class="event-card glass-panel fade-up">
+                    <div class="event-img-wrap">
+                        <img src="images/singapore.png" alt="Black Hat Asia" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'225\'><rect width=\'400\' height=\'225\' fill=\'%230a1628\'/></svg>'">
+                        <div class="event-img-overlay"></div>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-series">Offensive Security</div>
+                        <h3>Black Hat Asia</h3>
+                        <p class="event-date">Singapore</p>
+                    </div>
+                </div>
+
+                <div class="event-card glass-panel fade-up">
+                    <div class="event-img-wrap">
+                        <img src="images/lasvegas.png" alt="DEF CON" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'225\'><rect width=\'400\' height=\'225\' fill=\'%230a1628\'/></svg>'">
+                        <div class="event-img-overlay"></div>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-series">Hacker Conference</div>
+                        <h3>DEF CON</h3>
+                        <p class="event-date">Las Vegas, NV</p>
+                    </div>
+                </div>
+
+                <div class="event-card glass-panel fade-up">
+                    <div class="event-img-wrap">
+                        <img src="images/sanfrancisco.png" alt="RSA Conference" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'225\'><rect width=\'400\' height=\'225\' fill=\'%230a1628\'/></svg>'">
+                        <div class="event-img-overlay"></div>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-series">Enterprise Cyber</div>
+                        <h3>RSA Conference</h3>
+                        <p class="event-date">San Francisco, CA</p>
+                    </div>
+                </div>
+
+                <div class="event-card glass-panel fade-up">
+                    <div class="event-img-wrap">
+                        <img src="images/dubai.png" alt="GISEC Global" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'225\'><rect width=\'400\' height=\'225\' fill=\'%230a1628\'/></svg>'">
+                        <div class="event-img-overlay"></div>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-series">Middle East Sec</div>
+                        <h3>GISEC Global</h3>
+                        <p class="event-date">Dubai, UAE</p>
+                    </div>
+                </div>
+
+                <div class="event-card glass-panel fade-up">
+                    <div class="event-img-wrap">
+                        <img src="images/Delhi.png" alt="Nullcon" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'225\'><rect width=\'400\' height=\'225\' fill=\'%230a1628\'/></svg>'">
+                        <div class="event-img-overlay"></div>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-series">Security Research</div>
+                        <h3>Nullcon</h3>
+                        <p class="event-date">Delhi, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY ZYNTRIX CTA ========== -->
+    <section class="why-us" id="schedule">
+        <div class="section-inner">
+            <div class="why-us-inner fade-up">
+                <div class="why-text">
+                    <p class="section-label">Strategic Advantage</p>
+                    <h2>Built for Organizations<br><em>That Can’t Afford Failure.</em></h2>
+                    <p>ZYNTRIX helps enterprises secure critical digital infrastructure through intelligent automation, predictive analytics, and modern cyber defense architecture. We don't just react to alerts; we actively hunt, predict, and neutralize threats to keep your operations running continuously and securely.</p>
+                    <a href="mailto:contact@zyntrix.ai" class="btn-primary">Initiate Contact <span class="btn-arrow">→</span></a>
+                </div>
+                <div class="why-badge-grid">
+                    <div class="why-badge glass-panel"><span>🧠</span><p>AI-Native Security</p></div>
+                    <div class="why-badge glass-panel"><span>📡</span><p>Real-Time Threat Intelligence</p></div>
+                    <div class="why-badge glass-panel"><span>⚡</span><p>Autonomous Monitoring</p></div>
+                    <div class="why-badge glass-panel"><span>🏗️</span><p>Enterprise Scalability</p></div>
+                    <div class="why-badge glass-panel"><span>🛡️</span><p>Zero Trust Framework</p></div>
+                    <div class="why-badge glass-panel"><span>🎯</span><p>Predictive Defense Systems</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span style="font-family:'Outfit', sans-serif; font-size: 1.8rem; font-weight: 800; color: #FFFFFF; letter-spacing: 1px;">ZYN<span style="color: #00E8FF;">TRIX</span></span>
+                <p class="footer-tagline">Defense at Machine Speed.</p>
+            </div>
+            <div class="footer-big-cta">
+                <h2>Ready to Strengthen Your Digital Perimeter?</h2>
+                <a href="mailto:contact@zyntrix.ai" class="big-email">contact@zyntrix.ai</a>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="fm-col">
+                <h4>Capabilities</h4>
+                <a href="#services">Neural Defense</a>
+                <a href="#services">ZeroCore Infrastructure</a>
+                <a href="#services">Sentinel Red Teaming</a>
+            </div>
+            <div class="fm-col">
+                <h4>Platforms</h4>
+                <a href="#products">VANTA-X Engine</a>
+                <a href="#products">ECLIPSE EYE Vision</a>
+                <a href="#products">BLACKNODE GRID</a>
+            </div>
+            <div class="fm-col">
+                <h4>Organization</h4>
+                <a href="#aboutus">Company Narrative</a>
+                <a href="#careers">Careers</a>
+                <a href="#events">Conferences</a>
+            </div>
+            <div class="fm-col">
+                <h4>Comms</h4>
+                <a href="mailto:contact@zyntrix.ai">Direct Contact</a>
+                <a href="mailto:contact@zyntrix.ai?subject=Subscribe%20to%20Intel%20Briefings">Intel Briefings</a>
+            </div>
+            <div class="fm-col">
+                <h4>Network</h4>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">X (Twitter)</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2026 ZYNTRIX. All Rights Reserved.</p>
+            <div class="policy-links">
+                <a href="#">Privacy Architecture</a>
+                <a href="#">Terms of Deployment</a>
+                <a href="#">Vulnerability Disclosure</a>
+                <a href="#">Data Retention</a>
+                <a href="#">Zero Trust Policies</a>
+                <a href="#">Acceptable Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-actions" aria-label="Quick actions">
+        <a href="mailto:contact@zyntrix.ai" class="glass-btn">Contact Ops</a>
+        <a href="#careers" class="glass-btn">Join Team</a>
+    </div>
+
+    <!-- ========== HIDDEN DETAIL PANELS ========== -->
+    <template id="vantax-detail">
+        <h2>VANTA-X</h2>
+        <p class="panel-badge">AI Threat Engine</p>
+        <p>A highly advanced intelligence engine capable of correlating billions of security events using machine learning and behavioral analytics. Neutralize lateral movement and detect sophisticated intrusions autonomously before they establish footholds.</p>
+        <h3>Key Capabilities</h3>
+        <ul>
+            <li>Machine learning-based behavioral analytics</li>
+            <li>Real-time automated IOC correlation</li>
+            <li>Predictive lateral movement mapping</li>
+            <li>Deep integration with existing SIEM/SOAR</li>
+            <li>Automated triage and risk scoring</li>
+            <li>Adversarial pattern recognition models</li>
+        </ul>
+        <h3>Operational Fit</h3>
+        <ul>
+            <li>Enterprise Security Operation Centers (SOCs)</li>
+            <li>Cloud-native service providers</li>
+            <li>Financial clearing networks</li>
+            <li>National defense infrastructure</li>
+        </ul>
+        <a href="#schedule" class="panel-cta">Request Integration Demo →</a>
+    </template>
+
+    <template id="eclipseeye-detail">
+        <h2>ECLIPSE EYE</h2>
+        <p class="panel-badge naina">Autonomous Surveillance AI</p>
+        <p>Predictive perimeter defense. An AI-powered visual intelligence system capable of anomaly detection, activity recognition, perimeter monitoring, and forensic event reconstruction for sensitive physical infrastructure.</p>
+        <h3>Key Capabilities</h3>
+        <ul>
+            <li>Real-time autonomous anomaly detection</li>
+            <li>Tamper-proof localized forensic ledgers</li>
+            <li>Multi-node camera grid sync</li>
+            <li>Weapon, object, and erratic behavior recognition</li>
+            <li>Historical natural language search indexing</li>
+            <li>Encrypted air-gapped deployment capability</li>
+        </ul>
+        <h3>Operational Fit</h3>
+        <ul>
+            <li>Secure data centers</li>
+            <li>Military installations and test sites</li>
+            <li>Smart city infrastructure cores</li>
+            <li>Energy and power grids</li>
+        </ul>
+        <a href="#schedule" class="panel-cta">Request Integration Demo →</a>
+    </template>
+
+    <template id="job1-detail">
+        <h2>AI Security Engineer</h2>
+        <p class="panel-badge">Full-Time · Hybrid · Gurugram, India</p>
+        <p><strong>Experience:</strong> 4+ Years &nbsp;|&nbsp; <strong>Focus:</strong> AI/ML Operations</p>
+
+        <h3>Mission Objectives</h3>
+        <ul>
+            <li>Design, train, and deploy advanced ML models for VANTA-X</li>
+            <li>Optimize deep learning algorithms for anomaly detection at scale</li>
+            <li>Identify and mitigate vulnerabilities in neural network deployments (Adversarial AI)</li>
+            <li>Collaborate with threat researchers to map emerging behaviors to AI models</li>
+            <li>Reduce false-positive rates via continuous reinforcement loops</li>
+        </ul>
+
+        <h3>Technical Baseline</h3>
+        <ul>
+            <li>Advanced Python and C++</li>
+            <li>Deep expertise in PyTorch or TensorFlow</li>
+            <li>Experience with MLOps pipelines and scaling models in production</li>
+            <li>Understanding of modern adversarial evasion techniques</li>
+            <li>Knowledge of network protocols and system-level telemetry</li>
+        </ul>
+
+        <h3>How to Transmit Application</h3>
+        <p>Email your encrypted CV + portfolio to <strong>careers@zyntrix.ai</strong></p>
+        <p>Subject: "Ops - AI Security Engineer - [Your Name]"</p>
+        <a href="mailto:careers@zyntrix.ai?subject=Ops%20-%20AI%20Security%20Engineer" class="panel-cta">Transmit Application →</a>
+    </template>
+
+    <template id="job2-detail">
+        <h2>Threat Intelligence Analyst</h2>
+        <p class="panel-badge">Full-Time · Remote</p>
+        <p><strong>Experience:</strong> 3–5 Years &nbsp;|&nbsp; <strong>Focus:</strong> Research Division</p>
+
+        <h3>Mission Objectives</h3>
+        <ul>
+            <li>Hunt and track Advanced Persistent Threats (APTs) targeting global infrastructure</li>
+            <li>Produce high-fidelity intelligence reports and IOC feeds</li>
+            <li>Deconstruct malware samples and analyze adversarial TTPs</li>
+            <li>Map activities accurately to the MITRE ATT&amp;CK framework</li>
+            <li>Inform the Detection Engineering team of new behavioral signatures</li>
+        </ul>
+
+        <h3>Technical Baseline</h3>
+        <ul>
+            <li>Deep OSINT, Dark Web, and infrastructure tracking methodologies</li>
+            <li>Proficiency with YARA, Snort, and Suricata rule creation</li>
+            <li>Static and dynamic malware analysis experience</li>
+            <li>Strong analytical writing and debriefing skills</li>
+            <li>Scripting capabilities (Python/Bash) for data scraping</li>
+        </ul>
+
+        <h3>How to Transmit Application</h3>
+        <p>Email your encrypted CV + sample intel report to <strong>careers@zyntrix.ai</strong></p>
+        <p>Subject: "Ops - Threat Intelligence Analyst - [Your Name]"</p>
+        <a href="mailto:careers@zyntrix.ai?subject=Ops%20-%20Threat%20Intelligence%20Analyst" class="panel-cta">Transmit Application →</a>
+    </template>
+
+    <template id="job3-detail">
+        <h2>Cloud Infrastructure Security Architect</h2>
+        <p class="panel-badge">Full-Time · On-site · Gurugram, India</p>
+        <p><strong>Experience:</strong> 7+ Years &nbsp;|&nbsp; <strong>Focus:</strong> Platform Security</p>
+
+        <h3>Mission Objectives</h3>
+        <ul>
+            <li>Architect resilient, zero-trust cloud perimeters for ZYNTRIX environments</li>
+            <li>Design secure deployment models for BLACKNODE GRID clients</li>
+            <li>Enforce strict Identity and Access Management (IAM) gating</li>
+            <li>Lead DevSecOps integrations and CI/CD security controls</li>
+            <li>Conduct continuous compliance and risk architecture reviews</li>
+        </ul>
+
+        <h3>Technical Baseline</h3>
+        <ul>
+            <li>Mastery of AWS and/or Azure security primitives</li>
+            <li>Expertise in Kubernetes (K8s) security and container hardening</li>
+            <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+            <li>Implementation of Zero Trust Network Access (ZTNA)</li>
+            <li>Experience with regulatory frameworks (SOC 2, ISO 27001)</li>
+        </ul>
+
+        <h3>How to Transmit Application</h3>
+        <p>Email your encrypted CV to <strong>careers@zyntrix.ai</strong></p>
+        <p>Subject: "Ops - Cloud Security Architect - [Your Name]"</p>
+        <a href="mailto:careers@zyntrix.ai?subject=Ops%20-%20Cloud%20Security%20Architect" class="panel-cta">Transmit Application →</a>
+    </template>
+
+    <template id="job4-detail">
+        <h2>Detection Engineering Specialist</h2>
+        <p class="panel-badge">Full-Time · Remote</p>
+        <p><strong>Experience:</strong> 5+ Years &nbsp;|&nbsp; <strong>Focus:</strong> SOC Operations</p>
+
+        <h3>Mission Objectives</h3>
+        <ul>
+            <li>Write, test, and tune high-fidelity detection logic for enterprise clients</li>
+            <li>Engineer automation playbooks within SOAR platforms to reduce analyst fatigue</li>
+            <li>Parse complex telemetry data to identify anomalies in real time</li>
+            <li>Implement Detection-as-Code methodologies via CI/CD</li>
+            <li>Coordinate directly with Threat Intel to implement new IOCs rapidly</li>
+        </ul>
+
+        <h3>Technical Baseline</h3>
+        <ul>
+            <li>Extensive SIEM administration (Splunk, Elastic, Sentinel)</li>
+            <li>KQL, SPL, and advanced log parsing skills</li>
+            <li>Python automation for API interaction and playbook scripting</li>
+            <li>In-depth knowledge of Windows/Linux internals and logging mechanisms</li>
+            <li>Purple teaming experience is highly valued</li>
+        </ul>
+
+        <h3>How to Transmit Application</h3>
+        <p>Email your encrypted CV to <strong>careers@zyntrix.ai</strong></p>
+        <p>Subject: "Ops - Detection Engineering Specialist - [Your Name]"</p>
+        <a href="mailto:careers@zyntrix.ai?subject=Ops%20-%20Detection%20Engineering%20Specialist" class="panel-cta">Transmit Application →</a>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
